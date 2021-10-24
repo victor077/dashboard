@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <!-- Da acesso a lib através do cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="container">
+        <h1><span class="highlight">Projeto</span> IoT Revolucionário</h1>
+      </div>
+    </div>
+
+    <div class="dash">
+      <!-- Farol de temperatura -->
+      <div class="graph">
+        <div class="box red">
+          <h1>00°</h1>
+          <h3>STATUS</h3>
+          <p>Descrição do status</p>
+        </div>
+        <div class="box yellow">
+          <h1>00°</h1>
+          <h3>STATUS</h3>
+          <p>Descrição do status</p>
+        </div>
+        <div class="box green">
+          <h1>00°</h1>
+          <h3>STATUS</h3>
+          <p>Descrição do status</p>
+        </div>
+      </div>
+
+      <!-- Gráficos -->
+      <div class="graph">
+        <canvas id="salario_minimo" style="width: 100%; height: 100%"></canvas>
+      </div>
+
+      <div class="graph">
+       <canvas id="media_de_salario_por_regiao" style="width: 100%; height: 100%"></canvas>
+      </div>
+
+      <div class="graph">
+        <canvas id="desemprego_por_regiao" style="width: 100%; height: 100%"></canvas>
+      </div>
+    </div>
+  </body>
+
+</html>
+<script src="./js/graficos.js"></script>
+<script src="./js/grafico2.js"></script>
+<script src="./js/grafico3.js"></script>
